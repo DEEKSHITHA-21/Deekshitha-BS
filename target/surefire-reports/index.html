@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 7 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(edge, true)">testElPais(edge, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(android, true)">testElPais(android, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(firefox, true)">testElPais(firefox, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(iphone, true)">testElPais(iphone, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(edge, false)">testElPais(edge, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(chrome, true)">testElPais(chrome, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(firefox, false)">testElPais(firefox, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="runParallelTests">runParallelTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.bsassignment.UnifiedBrowserStackTest" class="method navigator-link" hash-for-method="testElPais(chrome, false)">testElPais(chrome, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.bsassignment.UnifiedBrowserStackTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(edge, true)">
+                  </a> <!-- testElPais(edge, true) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(edge,true)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(android, true)">
+                  </a> <!-- testElPais(android, true) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(android,true)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(firefox, true)">
+                  </a> <!-- testElPais(firefox, true) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(firefox,true)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(iphone, true)">
+                  </a> <!-- testElPais(iphone, true) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(iphone,true)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(edge, false)">
+                  </a> <!-- testElPais(edge, false) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(edge,false)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:58)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(chrome, true)">
+                  </a> <!-- testElPais(chrome, true) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(chrome,true)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(firefox, false)">
+                  </a> <!-- testElPais(firefox, false) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(firefox,false)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:53)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.bsassignment.UnifiedBrowserStackTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runParallelTests">
+                  </a> <!-- runParallelTests -->
+                  <span class="method-name">runParallelTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testElPais(chrome, false)">
+                  </a> <!-- testElPais(chrome, false) -->
+                  <span class="method-name">testElPais</span>
+                  <span class="parameters">(chrome,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.bsassignment.UnifiedBrowserStackTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testElPais')
+data.setCell(0, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(0, 3, 37763);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testElPais')
+data.setCell(1, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(1, 3, 2889);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testElPais')
+data.setCell(2, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(2, 3, 2889);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runParallelTests')
+data.setCell(3, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(3, 3, 255);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testElPais')
+data.setCell(4, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(4, 3, 9);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testElPais')
+data.setCell(5, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(5, 3, 6);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testElPais')
+data.setCell(6, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testElPais')
+data.setCell(7, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(7, 3, 5);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testElPais')
+data.setCell(8, 2, 'org.bsassignment.UnifiedBrowserStackTest')
+data.setCell(8, 3, 5);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.bsassignment.UnifiedBrowserStackTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runParallelTests</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testElPais(chrome, false)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(edge, false)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(chrome, true)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(firefox, false)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(firefox, true)</span>
+                <span class="method-start">261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(edge, true)</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(iphone, true)</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testElPais(android, true)</span>
+                <span class="method-start">265 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,46 @@
+<suite name="BrowserStack Parallel Execution" parallel="tests" thread-count="5">
+    <test name="Chrome on Windows">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="device" value="desktop"/>
+        <classes>
+            <class name="org.bsassignment.BrowserStackLocalTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox on macOS">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="os" value="OS X"/>
+        <parameter name="device" value="desktop"/>
+        <classes>
+            <class name="org.bsassignment.BrowserStackLocalTest"/>
+        </classes>
+    </test>
+
+    <test name="Safari on iPhone 14">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="os" value="16"/>
+        <parameter name="device" value="iPhone 14"/>
+        <classes>
+            <class name="org.bsassignment.BrowserStackLocalTest"/>
+        </classes>
+    </test>
+
+    <test name="Chrome on Samsung Galaxy S23">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="os" value="13.0"/>
+        <parameter name="device" value="Samsung Galaxy S23"/>
+        <classes>
+            <class name="org.bsassignment.BrowserStackLocalTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge on Windows">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="device" value="desktop"/>
+        <classes>
+            <class name="org.bsassignment.BrowserStackLocalTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,664 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 27 23:16:49 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38036 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: edge, true</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1019533380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1019533380'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+</pre></div></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: android, true</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1164918046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1164918046'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+</pre></div></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: firefox, true</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076283896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076283896'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+</pre></div></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: iphone, true</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157616917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157616917'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+</pre></div></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: edge, false</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:58)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556880512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556880512'><pre>java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:58)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>2</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: chrome, true</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074110029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074110029'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+</pre></div></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: firefox, false</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:53)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139583082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139583082'><pre>java.lang.NoSuchMethodError: &apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:53)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>2</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.runParallelTests()'><b>runParallelTests</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest</td>
+<td></td>
+<td>0</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+<tr>
+<td title='org.bsassignment.UnifiedBrowserStackTest.testElPais()'><b>testElPais</b><br>Test class: org.bsassignment.UnifiedBrowserStackTest<br>Parameters: chrome, false</td>
+<td></td>
+<td>37</td>
+<td>org.bsassignment.UnifiedBrowserStackTest@4c583ecf</td></tr>
+</table><p>
+</body>
+</html>

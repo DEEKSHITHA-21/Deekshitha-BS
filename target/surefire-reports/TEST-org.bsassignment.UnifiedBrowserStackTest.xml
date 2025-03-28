@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.bsassignment.UnifiedBrowserStackTest" time="43.309" tests="9" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/deekshithaj/.cache/selenium/chromedriver/mac-arm64/134.0.6998.165/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/deekshithaj/IdeaProjects/BS/target/test-classes:/Users/deekshithaj/IdeaProjects/BS/target/classes:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.19.1/selenium-java-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.19.1/selenium-api-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.19.1/selenium-chrome-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.19.1/selenium-chromium-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.19.1/selenium-json-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.19.1/selenium-manager-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.19.1/selenium-devtools-v121-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.19.1/selenium-devtools-v122-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.19.1/selenium-devtools-v123-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.19.1/selenium-devtools-v85-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.19.1/selenium-edge-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.19.1/selenium-firefox-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.19.1/selenium-http-4.19.1.jar:/Users/deekshithaj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.19.1/selenium-ie-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.19.1/selenium-remote-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-api/1.36.0/opentelemetry-api-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-context/1.36.0/opentelemetry-context-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.36.0/opentelemetry-exporter-logging-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.36.0/opentelemetry-sdk-common-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.36.0/opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.36.0/opentelemetry-sdk-extension-autoconfigure-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.36.0-alpha/opentelemetry-api-events-1.36.0-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.36.0/opentelemetry-sdk-trace-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.36.0-alpha/opentelemetry-extension-incubator-1.36.0-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.36.0/opentelemetry-sdk-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.36.0/opentelemetry-sdk-metrics-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.36.0/opentelemetry-sdk-logs-1.36.0.jar:/Users/deekshithaj/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.19.1/selenium-os-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.19.1/selenium-safari-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.19.1/selenium-support-4.19.1.jar:/Users/deekshithaj/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/Users/deekshithaj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/Users/deekshithaj/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/deekshithaj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/deekshithaj/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/deekshithaj/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/deekshithaj/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/deekshithaj/.m2/repository/com/browserstack/browserstack-local-java/1.0.6/browserstack-local-java-1.0.6.jar:/Users/deekshithaj/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/deekshithaj/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/deekshithaj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/deekshithaj/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/deekshithaj/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/Users/deekshithaj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/deekshithaj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-testng/7.17.0/cucumber-testng-7.17.0.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-translate/2.23.0/google-cloud-translate-2.23.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-api/1.56.1/grpc-api-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-context/1.56.1/grpc-context-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/deekshithaj/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-stub/1.56.1/grpc-stub-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-protobuf/1.56.1/grpc-protobuf-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-protobuf-lite/1.56.1/grpc-protobuf-lite-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/api/api-common/2.15.0/api-common-2.15.0.jar:/Users/deekshithaj/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.2/auto-value-annotations-1.10.2.jar:/Users/deekshithaj/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/deekshithaj/.m2/repository/com/google/protobuf/protobuf-java/3.23.2/protobuf-java-3.23.2.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.23.0/proto-google-common-protos-2.23.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-cloud-translate-v3beta1/0.105.0/proto-google-cloud-translate-v3beta1-0.105.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-cloud-translate-v3/2.23.0/proto-google-cloud-translate-v3-2.23.0.jar:/Users/deekshithaj/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/deekshithaj/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/deekshithaj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/deekshithaj/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/deekshithaj/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax/2.32.0/gax-2.32.0.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax-grpc/2.32.0/gax-grpc-2.32.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-alts/1.56.1/grpc-alts-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-grpclb/1.56.1/grpc-grpclb-1.56.1.jar:/Users/deekshithaj/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-auth/1.56.1/grpc-auth-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-netty-shaded/1.56.1/grpc-netty-shaded-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-core/1.56.1/grpc-core-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/Users/deekshithaj/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-googleapis/1.56.1/grpc-googleapis-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-xds/1.56.1/grpc-xds-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-services/1.56.1/grpc-services-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/re2j/re2j/1.7/re2j-1.7.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax-httpjson/2.32.0/gax-httpjson-2.32.0.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-gson/1.43.3/google-http-client-gson-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/google/protobuf/protobuf-java-util/3.23.2/protobuf-java-util-3.23.2.jar:/Users/deekshithaj/.m2/repository/org/threeten/threetenbp/1.6.8/threetenbp-1.6.8.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-core/2.22.0/google-cloud-core-2.22.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.18.0/proto-google-iam-v1-1.18.0.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-core-http/2.22.0/google-cloud-core-http-2.22.0.jar:/Users/deekshithaj/.m2/repository/com/google/api-client/google-api-client/2.2.0/google-api-client-2.2.0.jar:/Users/deekshithaj/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/deekshithaj/.m2/repository/com/google/oauth-client/google-oauth-client/1.34.1/google-oauth-client-1.34.1.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-apache-v2/1.43.3/google-http-client-apache-v2-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-appengine/1.43.3/google-http-client-appengine-1.43.3.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar:/Users/deekshithaj/.m2/repository/com/google/apis/google-api-services-translate/v2-rev20170525-2.0.0/google-api-services-translate-v2-rev20170525-2.0.0.jar:/Users/deekshithaj/.m2/repository/com/google/auth/google-auth-library-credentials/1.19.0/google-auth-library-credentials-1.19.0.jar:/Users/deekshithaj/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.19.0/google-auth-library-oauth2-http-1.19.0.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client/1.43.3/google-http-client-1.43.3.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/deekshithaj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-jackson2/1.43.3/google-http-client-jackson2-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="browserstack.key" value="twJqQVqwFFAX75mdSG88"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/deekshithaj/IdeaProjects/BS/target/surefire/surefirebooter-20250327231649124_3.jar /Users/deekshithaj/IdeaProjects/BS/target/surefire 2025-03-27T23-16-45_221-jvmRun1 surefire-20250327231649124_1tmp surefire_0-20250327231649124_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="UnifiedBrowserStackTest"/>
+    <property name="surefire.test.class.path" value="/Users/deekshithaj/IdeaProjects/BS/target/test-classes:/Users/deekshithaj/IdeaProjects/BS/target/classes:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.19.1/selenium-java-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.19.1/selenium-api-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.19.1/selenium-chrome-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.19.1/selenium-chromium-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.19.1/selenium-json-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.19.1/selenium-manager-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.19.1/selenium-devtools-v121-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.19.1/selenium-devtools-v122-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.19.1/selenium-devtools-v123-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.19.1/selenium-devtools-v85-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.19.1/selenium-edge-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.19.1/selenium-firefox-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.19.1/selenium-http-4.19.1.jar:/Users/deekshithaj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.19.1/selenium-ie-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.19.1/selenium-remote-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-api/1.36.0/opentelemetry-api-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-context/1.36.0/opentelemetry-context-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.36.0/opentelemetry-exporter-logging-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.36.0/opentelemetry-sdk-common-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.36.0/opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.36.0/opentelemetry-sdk-extension-autoconfigure-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.36.0-alpha/opentelemetry-api-events-1.36.0-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.36.0/opentelemetry-sdk-trace-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.36.0-alpha/opentelemetry-extension-incubator-1.36.0-alpha.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.36.0/opentelemetry-sdk-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.36.0/opentelemetry-sdk-metrics-1.36.0.jar:/Users/deekshithaj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.36.0/opentelemetry-sdk-logs-1.36.0.jar:/Users/deekshithaj/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.19.1/selenium-os-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.19.1/selenium-safari-driver-4.19.1.jar:/Users/deekshithaj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.19.1/selenium-support-4.19.1.jar:/Users/deekshithaj/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/Users/deekshithaj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/deekshithaj/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/Users/deekshithaj/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/Users/deekshithaj/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/deekshithaj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/deekshithaj/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/deekshithaj/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/deekshithaj/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/deekshithaj/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/deekshithaj/.m2/repository/com/browserstack/browserstack-local-java/1.0.6/browserstack-local-java-1.0.6.jar:/Users/deekshithaj/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/deekshithaj/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/deekshithaj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/deekshithaj/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/deekshithaj/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/Users/deekshithaj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/Users/deekshithaj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/deekshithaj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/deekshithaj/.m2/repository/io/cucumber/cucumber-testng/7.17.0/cucumber-testng-7.17.0.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-translate/2.23.0/google-cloud-translate-2.23.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-api/1.56.1/grpc-api-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-context/1.56.1/grpc-context-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/deekshithaj/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-stub/1.56.1/grpc-stub-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-protobuf/1.56.1/grpc-protobuf-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-protobuf-lite/1.56.1/grpc-protobuf-lite-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/api/api-common/2.15.0/api-common-2.15.0.jar:/Users/deekshithaj/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.2/auto-value-annotations-1.10.2.jar:/Users/deekshithaj/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/deekshithaj/.m2/repository/com/google/protobuf/protobuf-java/3.23.2/protobuf-java-3.23.2.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.23.0/proto-google-common-protos-2.23.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-cloud-translate-v3beta1/0.105.0/proto-google-cloud-translate-v3beta1-0.105.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-cloud-translate-v3/2.23.0/proto-google-cloud-translate-v3-2.23.0.jar:/Users/deekshithaj/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/deekshithaj/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/deekshithaj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/deekshithaj/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/deekshithaj/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax/2.32.0/gax-2.32.0.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax-grpc/2.32.0/gax-grpc-2.32.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-alts/1.56.1/grpc-alts-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-grpclb/1.56.1/grpc-grpclb-1.56.1.jar:/Users/deekshithaj/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-auth/1.56.1/grpc-auth-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-netty-shaded/1.56.1/grpc-netty-shaded-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-core/1.56.1/grpc-core-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/Users/deekshithaj/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-googleapis/1.56.1/grpc-googleapis-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-xds/1.56.1/grpc-xds-1.56.1.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar:/Users/deekshithaj/.m2/repository/io/grpc/grpc-services/1.56.1/grpc-services-1.56.1.jar:/Users/deekshithaj/.m2/repository/com/google/re2j/re2j/1.7/re2j-1.7.jar:/Users/deekshithaj/.m2/repository/com/google/api/gax-httpjson/2.32.0/gax-httpjson-2.32.0.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-gson/1.43.3/google-http-client-gson-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/google/protobuf/protobuf-java-util/3.23.2/protobuf-java-util-3.23.2.jar:/Users/deekshithaj/.m2/repository/org/threeten/threetenbp/1.6.8/threetenbp-1.6.8.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-core/2.22.0/google-cloud-core-2.22.0.jar:/Users/deekshithaj/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.18.0/proto-google-iam-v1-1.18.0.jar:/Users/deekshithaj/.m2/repository/com/google/cloud/google-cloud-core-http/2.22.0/google-cloud-core-http-2.22.0.jar:/Users/deekshithaj/.m2/repository/com/google/api-client/google-api-client/2.2.0/google-api-client-2.2.0.jar:/Users/deekshithaj/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/deekshithaj/.m2/repository/com/google/oauth-client/google-oauth-client/1.34.1/google-oauth-client-1.34.1.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-apache-v2/1.43.3/google-http-client-apache-v2-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-appengine/1.43.3/google-http-client-appengine-1.43.3.jar:/Users/deekshithaj/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar:/Users/deekshithaj/.m2/repository/com/google/apis/google-api-services-translate/v2-rev20170525-2.0.0/google-api-services-translate-v2-rev20170525-2.0.0.jar:/Users/deekshithaj/.m2/repository/com/google/auth/google-auth-library-credentials/1.19.0/google-auth-library-credentials-1.19.0.jar:/Users/deekshithaj/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.19.0/google-auth-library-oauth2-http-1.19.0.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client/1.43.3/google-http-client-1.43.3.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/deekshithaj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/deekshithaj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/deekshithaj/.m2/repository/com/google/http-client/google-http-client-jackson2/1.43.3/google-http-client-jackson2-1.43.3.jar:/Users/deekshithaj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/deekshithaj"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="browserstack.user" value="deekshithaj_btscIV"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/deekshithaj/IdeaProjects/BS"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/deekshithaj/IdeaProjects/BS/target/surefire/surefirebooter-20250327231649124_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="deekshithaj"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="15.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/deekshithaj/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="otel.logs.exporter" value="none"/>
+    <property name="java.io.tmpdir" value="/var/folders/bv/th0bctpd4d1206mjlx7z3l4m0000gp/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/deekshithaj/IdeaProjects/BS"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/deekshithaj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="runParallelTests" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.259">
+    <system-err><![CDATA[Mar 27, 2025 11:16:49 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Error in parallel test for android: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}
+Error in parallel test for edge: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+Error in parallel test for firefox: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+Error in parallel test for chrome: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+Error in parallel test for iphone: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}
+]]></system-err>
+  </testcase>
+  <testcase name="testElPais[iphone, true](4)" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.008">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]&#10;Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: iPhone 14, name: El Pais Article Scraper, os_version: 16, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+]]></failure>
+    <system-err><![CDATA[Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Mar 27, 2025 11:16:50 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+]]></system-err>
+  </testcase>
+  <testcase name="testElPais[chrome, true](2)" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.008">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]&#10;Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Chrome, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+]]></failure>
+  </testcase>
+  <testcase name="testElPais[firefox, true](1)" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.009">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]&#10;Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Firefox, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+]]></failure>
+  </testcase>
+  <testcase name="testElPais[edge, true](3)" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.009">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]&#10;Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}]}]
+Capabilities {browser: Edge, browser_version: latest, browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, name: El Pais Article Scraper, os: Windows, os_version: 11, project: El Pais Scraping}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browser, browser_version, browserstack.key, browserstack.user, build, name, os, os_version, project]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+]]></failure>
+  </testcase>
+  <testcase name="testElPais[android, true](5)" classname="org.bsassignment.UnifiedBrowserStackTest" time="0.009">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;DV-JWWK3PFJYN&apos;, ip: &apos;2401:4900:6408:f3b5:9991:93de:a99f:e14%en0&apos;&#10;Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]&#10;Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DV-JWWK3PFJYN', ip: '2401:4900:6408:f3b5:9991:93de:a99f:e14%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}]}]
+Capabilities {browserstack.key: twJqQVqwFFAX75mdSG88, browserstack.user: deekshithaj_btscIV, build: Browser Compatibility Test, device: Samsung Galaxy S23, name: El Pais Article Scraper, os_version: 13.0, project: El Pais Scraping, real_mobile: true}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:112)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [browserstack.key, browserstack.user, build, device, name, os_version, project, real_mobile]
+	at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:580)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:581)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+	at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 18 more
+]]></failure>
+  </testcase>
+  <testcase name="testElPais[edge, false](7)" classname="org.bsassignment.UnifiedBrowserStackTest" time="2.934">
+    <failure message="&apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:58)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+    <system-out><![CDATA[23:16:50.249 [TestNG-PoolService-0] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+23:16:50.257 [TestNG-PoolService-2] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+23:16:50.258 [TestNG-PoolService-1] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+23:16:50.338 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 preparing request execution
+23:16:50.338 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000002 preparing request execution
+23:16:50.344 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 target auth state: UNCHALLENGED
+23:16:50.344 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000002 target auth state: UNCHALLENGED
+23:16:50.344 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 proxy auth state: UNCHALLENGED
+23:16:50.344 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000002 proxy auth state: UNCHALLENGED
+23:16:50.344 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+23:16:50.344 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000002 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+23:16:50.344 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquiring endpoint (3 MINUTES)
+23:16:50.344 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000002 acquiring endpoint (3 MINUTES)
+23:16:50.345 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000002 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+23:16:50.345 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+23:16:50.346 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+23:16:50.346 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000002 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+23:16:50.351 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000002 acquired ep-0000000002
+23:16:50.351 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 acquired ep-0000000001
+23:16:50.352 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000002 acquired endpoint ep-0000000002
+23:16:50.352 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquired endpoint ep-0000000001
+23:16:50.352 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000002 opening connection {s}->https://raw.githubusercontent.com:443
+23:16:50.352 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+23:16:50.352 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000002 connecting endpoint (null)
+23:16:50.353 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 connecting endpoint (null)
+23:16:50.353 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+23:16:50.353 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+23:16:50.354 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolving remote address
+23:16:50.353 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolving remote address
+23:16:50.444 [TestNG-PoolService-0] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=134 in cache (valid until 23:35:39 27/03/2025 IST)
+23:16:50.445 [TestNG-PoolService-0] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome134=134.0.6998.165 in cache (valid until 22:35:39 28/03/2025 IST)
+23:16:50.445 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 134.0.6998.165 (resolved driver for Chrome 134)
+23:16:50.476 [TestNG-PoolService-0] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 134.0.6998.165 found in cache
+23:16:50.476 [TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as /Users/deekshithaj/.cache/selenium/chromedriver/mac-arm64/134.0.6998.165/chromedriver
+23:16:52.754 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.111.133]
+23:16:52.754 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.111.133]
+23:16:52.755 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.109.133:443 (30 SECONDS)
+23:16:52.755 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.109.133:443 (30 SECONDS)
+23:16:52.755 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Connecting socket to raw.githubusercontent.com/185.199.109.133:443 with timeout 30 SECONDS
+23:16:52.755 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Connecting socket to raw.githubusercontent.com/185.199.109.133:443 with timeout 30 SECONDS
+23:16:52.849 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled protocols: [TLSv1.3, TLSv1.2]
+23:16:52.849 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled protocols: [TLSv1.3, TLSv1.2]
+23:16:52.850 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+23:16:52.850 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+23:16:52.850 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Starting handshake (null)
+23:16:52.850 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Starting handshake (null)
+23:16:53.021 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Secure session established
+23:16:53.021 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Secure session established
+23:16:53.021 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated protocol: TLSv1.3
+23:16:53.021 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated protocol: TLSv1.3
+23:16:53.021 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+23:16:53.021 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+23:16:53.021 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer principal: CN=*.github.io
+23:16:53.021 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer principal: CN=*.github.io
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer alternative names: [*.github.io, *.github.com, *.githubusercontent.com, github.com, github.io, githubusercontent.com, www.github.com]
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer alternative names: [*.github.io, *.github.com, *.githubusercontent.com, github.com, github.io, githubusercontent.com, www.github.com]
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  issuer principal: CN=Sectigo RSA Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, ST=Greater Manchester, C=GB
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  issuer principal: CN=Sectigo RSA Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, ST=Greater Manchester, C=GB
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection -- http-outgoing-0 set socket timeout to 3 MINUTES
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection -- http-outgoing-1 set socket timeout to 3 MINUTES
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.109.133:443 as http-outgoing-0
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.109.133:443 as http-outgoing-1
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connected http-outgoing-0
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 connected http-outgoing-1
+23:16:53.023 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 endpoint connected
+23:16:53.023 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000002 endpoint connected
+23:16:53.024 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+23:16:53.024 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies -- ex-0000000001 Cookie spec selected: strict
+23:16:53.024 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000002 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+23:16:53.024 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies -- ex-0000000002 Cookie spec selected: strict
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 start execution ex-0000000001
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> accept-encoding: gzip, deflate, br
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> cache-control: max-age=0
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> connection: keep-alive
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> Host: raw.githubusercontent.com
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+23:16:53.027 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "[\r][\n]"
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000002 start execution ex-0000000002
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 executing exchange ex-0000000002 over http-outgoing-1
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> user-agent: Apache-HttpClient/5.0
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> accept-encoding: gzip, deflate, br
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> cache-control: max-age=0
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> connection: keep-alive
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 >> Host: raw.githubusercontent.com
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+23:16:53.028 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+23:16:53.029 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+23:16:53.029 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "cache-control: max-age=0[\r][\n]"
+23:16:53.029 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "connection: keep-alive[\r][\n]"
+23:16:53.029 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "Host: raw.githubusercontent.com[\r][\n]"
+23:16:53.029 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 >> "[\r][\n]"
+23:16:53.116 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Length: 946[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-GitHub-Request-Id: 8995:13DF90:3854C:7569C:67CF10B0[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Date: Thu, 27 Mar 2025 17:46:53 GMT[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Served-By: cache-del21740-DEL[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Timer: S1743097613.170761,VS0,VE1[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Fastly-Request-ID: c0730b26a09176e2bb832ebd1da2de898d414fa4[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Expires: Thu, 27 Mar 2025 17:51:53 GMT[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Source-Age: 192[\r][\n]"
+23:16:53.117 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Content-Length: 946[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Cache-Control: max-age=300[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Frame-Options: deny[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-GitHub-Request-Id: 8995:13DF90:3854C:7569C:67CF10B0[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Accept-Ranges: bytes[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Date: Thu, 27 Mar 2025 17:46:53 GMT[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Via: 1.1 varnish[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Served-By: cache-del21732-DEL[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Cache: HIT[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Cache-Hits: 1[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Timer: S1743097613.170112,VS0,VE1[\r][\n]"
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+23:16:53.118 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << HTTP/1.1 200 OK
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+23:16:53.118 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Connection: keep-alive
+23:16:53.118 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+23:16:53.118 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Length: 946
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "X-Fastly-Request-ID: d90f2fd598329f48a9b4fa56837c30ef312b001c[\r][\n]"
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cache-Control: max-age=300
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Expires: Thu, 27 Mar 2025 17:51:53 GMT[\r][\n]"
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "Source-Age: 192[\r][\n]"
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "[\r][\n]"
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Content-Type-Options: nosniff
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Frame-Options: deny
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-XSS-Protection: 1; mode=block
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-GitHub-Request-Id: 8995:13DF90:3854C:7569C:67CF10B0
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Encoding: gzip
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Accept-Ranges: bytes
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Date: Thu, 27 Mar 2025 17:46:53 GMT
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Via: 1.1 varnish
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Served-By: cache-del21740-DEL
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache: HIT
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << HTTP/1.1 200 OK
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache-Hits: 1
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Connection: keep-alive
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Timer: S1743097613.170761,VS0,VE1
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Content-Length: 946
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Cache-Control: max-age=300
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Access-Control-Allow-Origin: *
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Content-Type: text/plain; charset=utf-8
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Fastly-Request-ID: c0730b26a09176e2bb832ebd1da2de898d414fa4
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << ETag: W/"dc0c32cea2dfa86f6cf10513cf8a64e1e8817484a415b658b4eecd962d4deaee"
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Expires: Thu, 27 Mar 2025 17:51:53 GMT
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+23:16:53.119 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Source-Age: 192
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Content-Type-Options: nosniff
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Frame-Options: deny
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-XSS-Protection: 1; mode=block
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-GitHub-Request-Id: 8995:13DF90:3854C:7569C:67CF10B0
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Content-Encoding: gzip
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Accept-Ranges: bytes
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Date: Thu, 27 Mar 2025 17:46:53 GMT
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Via: 1.1 varnish
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Served-By: cache-del21732-DEL
+23:16:53.119 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Cache: HIT
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Cache-Hits: 1
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Timer: S1743097613.170112,VS0,VE1
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Vary: Authorization,Accept-Encoding,Origin
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Access-Control-Allow-Origin: *
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Cross-Origin-Resource-Policy: cross-origin
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << X-Fastly-Request-ID: d90f2fd598329f48a9b4fa56837c30ef312b001c
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Expires: Thu, 27 Mar 2025 17:51:53 GMT
+23:16:53.120 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-1 << Source-Age: 192
+23:16:53.121 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000002 connection can be kept alive for 3 MINUTES
+23:16:53.121 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 connection can be kept alive for 3 MINUTES
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]X[0xffffffd1]n[0xffffffda]0[0x14]}[0xffffffe7]+,[0xffffffba]J [0x11][0xffffffb2][0x1][0xffffffeb][0xffffffaa]Jy[0xffffffa0][0x19]e[0xffffffd5][0xffffffa8]`[0xffffffd0]v[0xffffff9b][0xffffffe4][0x17][0xffffff93]8`)[0xffffff89]Q[0xffffff9c]@[0xffffffb7][0xffffffa9][0xfffffffb][0xfffffff6]9NB[0xffffffe3]$[0xc]H[0xffffffe0][0xffffffad][0xffffff8e][0xffffff8f][0xffffffef]97[0xffffffdc]s}[0xffffffd3][0xb][0xffffffa0]S[0xffffffc7]A[0xffffffae][0xffffffc9][0xffffff80][0xffffff89]|4G[0xc][0xffffffd7].[0xffffffc0][0xffffffe3][0xffffff92]0`[0x11][0x1b][0x3][0xffffff83][0xffffffba]>".[0x3][0xfffffffe]2\[0xffffffc4]P[0xffffff9f][0xffffff82]9[0x6][0xfffffff8][0x5][0x1b][0xffffff81][0xffffff8f]M@\[0xffffffb1][0xffffffcd][0xffffff96][0xffffffd8][0xffffffb6][0xffffffc3][0x5][0xfffffff5]L[0xffffffec][0xffffff85] [0x13][0xfffffffb][0xffffffd8][0xfffffff0][0xffffffc5][0xffffffe6][0x1a]{[0xffffff8c]P[0xffffffbe]g[0x1][0xffffffcc][0xffffffff]^x[0x18][0xffffffbb]`[0xffffffee][0xffffffd1][\r][0xffffffe3][0x1b][0xffffff9c][0xffffffb2][0xffffffa1]/=[0xffffffea][0xffffffe0][0x16][0xffffffb8]#[0x1e][0xffffffb6][0xffffffe8]K[0xb][0xffffff8c]W[0xffffffd8]C-00[0x17][0xfffffffc][0xffffffa9][0xffffffd8]%[0xffffff81][0xffffffd3][0xc][0xffffffe3][0xffffff9b][0xffffffc4][0xffffffb2][0xffffffb0][0xffffff87]][0x1f][0xffffffd0][0x10][0xffffffe3][0x13]w[0x1][0xffffffd8]/[0xffffffe6]c[0xffffff87][0xffffff81][0xffffffc6]w[0xffffffe2][0xffffff9a]<j[0xb][0xffffff8c][0xffffff88][0x1b][0xfffffff0]0[0xf][0xffffffc8][0x0][0xffffffe3]Y[0xffffffb3][0xffffffc6]9"[0xffffff8a]Z[0xffffff9c]F[0xffffffdb][0x10][0xffffffcb][0xfffffff6]&:[0xffffffd0]~[0xffffffff]A3[0x1c][0xffffffb3][0xffffffcd][0xffffffb3][0x2][0xffffffaa][0xe]6[0xe]1[0xffffffc4]+[0x11][0xffffffaf]a[0xffffffb3][0xffffffe4]|[0xffffffc0]E[0xe][0xffffffd6][0xffffffea][0xffffff97][0xffffff93][0xffffffe9]x8[0xffffffed]?[0xffffffdc][0xffffffdd][0xffffff8f][0x6][0xffffffb3][0x1b][0xffffffa8]Ax[0x9][0xffffffe1][0xffffff90][0xffffffd2][0xffffff85][0xffffff8d]![0xffffff8c]( [0xffffffec][0xffffffaf]V61[0xffffffb8]4[0xffffffea]B[0x18][0x13][0xfffffff1][0xffffffc8]u[0xffffffb0][0xffffffc0]>x[0xffffff8e][0xffffffdf][0xffffff85][0xffffffba]Fv[0xffffffb0][O[0xffffffa7][0xffffff84][0xffffff9e][0xffffffc6][0xffffff8f][0xffffffeb][0xffffffab][0xffffffe6]9Eu[0xf][0x14]5[0x1a][0xffffffeb][0xfffffffd]Q[0x7f]2[0xfffffff9][0xffffffdc][0x7f][0xffffffec][0xffffff9f]SOO[0xffffff9b][0xe][0xffffff86][0xffffffe0][0xffffffdb][0xffffffd3]`[0xfffffffa][0x13]|[0xfffffff9][0xffffffaa]?[0xffffffc1][0x19][0xffffffb5][0xfffffffc][\r][0xfffffff2]p[0xffffffc2][0x16][0xffffff93][0xffffffdd][0xffffff8e]n12D[0xffffffbc][0xffffffa4][0x16]w[0xffffffc6][0xfffffffc][0xffffffa8][0xffffffad][0xffffffe8][0xffffff86]c[0xffffffc2]z[0x16][0xffffffa9]*[0xffffffb1]I@c[0xffffff88]}[0xffffffe5][0xffffff9e][0x17][0x1a][0xffffffa8][0xffffffbf][0xfffffffb][0xffffff83][0xffffffdd][0xfffffff5]M:[0xffffffcd][0xffffffd7][0xc]e:[0xffffffbd]Tv[0xffffffcd]v[0xffffff9c][0xffffffda][0xffffffbd]k[0xffffffd1][0xfffffff6][0xffffffc4][0xffffffa3]f`[0xfffffff8][0xffffffcf]{$][0x1d].)W[0xe][0xffffffe7][0xffffffd4][0xfffffff5][0xffffffa9][0xffffff9c][0xffffffae]SH[0xffffffca]j[0xffffffb2]C[0xffffffbf][0xffffff87].V[0x3][0xffffffe6][0xffffffa9]s[0xffffffe2][0xffffffaa][0xb][0xffffffc1][0xffffffa1]D[0xfffffffb]@Qv[0xfffffffc][0xffffffee][0xfffffff1][0xffffffc1][0xffffff8e][0xffffffb6][0xb][0xffffff9f]=[0xffffffe0] C[0xfffffff0][0xffffffa4]T35J([0xffffffee]1m[0xffffffb4]Z[0xffffffa9]:[0xffffffef][0xffffff9d][0xffffffbc]I1[0xffffff95][0xffffffb7][0xffffffa0][0xfffffff1]L[0x6][0xffffffa4][0xffffffa3][0xfffffff3][0xffffffce][0x14]7[0xffffffbd]-[0xffffff91][0x15][0xffffffad]O[0xffffffd3][0xffffff9b][0x1e][0xffffffe8]ob[0xffffffdb](![0xffffff81]0[0xffffff89][0xffffffbe][0xffffffcf]k9[0x15][0xffffff95];[0xffffffd2][0xffffffe9][0xffffffa4]tS[0xffffffbe][0xffffffaf][0xffffffcb][0xffffffc6][0xffffff8f]I[0xffffffb2]d[0xfffffff5][0xffffffd0][0xfffffffa]z[0xffffffe0][0xffffff85][0x17]G[0xffffffb6][0xffffffac]s[0xffffffe1]{[0xffffff95][0xfffffffc][0x16]1[0xffffffff][0xfffffffd] [0xffffffa5]w[0xffffff90][0xffffffbf]rB[0xffffff8e][0xffffffe8]E[0xffffffb2][0xffffffc1][0xffffff8e][0xffffffd7][0xffffff90][0x13][0xffffff91]wT[0xffffffbc][0x3][0xffffff94][0xfffffff5].pGKar[0xffffffa0]B[0xffffffe7][0xffffffc4][0xffffffbf]O[0xffffff91]g[0xffffffd2][0xffffffb1][0xffffffb8]M[0xffffffc2]Y`[0x1b][0x13][0xfffffff3]E5[0xffffff83][0xffffffc8][0xffffffa5]I[0xc][0xffffff8f]2^C[0x10][0xffffff86]4[0xffffff99][0xffffffdb][0xffffffc9]a[0xffffff82]n_[0xffffff99][0xffffffca][0xffffff9a][0xffffffca][0xffffffd8][0xffffffe5][0xffffff8c]r[0xffffffba];[0xffffffaf][0xffffffca]72[0xffffffc1][0xfffffff5][0xffffffbf][0xffffffbb]R[0xe]Y[0xffffffd2]&[0xffffffaf]Y[0xffffffc6]tr[0xffffffa9][0xffffffdc][0xe][0xffffffb2][0xffffff8c][0xffffffac][0xffffffa8][0xffffffa4]_[0x12][0xffffffe3]V[0xffffff97]U[0xffffff93][0xffffff85][0xffffffe5]=[0xffffffe4]$[0x1c]J[0x8]([0xffffffb8][0xffffff96][0xffffffd2][0xffffffe7]:[0xffffffda]N[0xffffffb8][0xffffff8c]/t[0xffffffd6]6[0x1d][0xffffffe1][0xffffff9c]"[0xffffff83][0xffffffc9][0x8] ]Jb[0x0][0xffffffdf][0xffffffb2][0xffffff88]Q[0xfffffffb]x[0xffffffbf][0x15][0xffffffcd][0xffffff81][0xfffffffc][0xffffff8d]-<[0xffffffe4]0[0x8][0x5][0x5][0xffffff84]Q[0xffffffec]}[0xffffffd5][0xffffff9c]QP[0xffffffc5]][0xffffffa7]QPe[0x16][0xffffff8e]ym[0x14][0xffffffb8][0x6][0xffffffc7][0x1e]K[0xffffffdd][0xffffffab][0xffffff90]|E[0xffffffea][0xffffffd2]7R[0xffffffc4]+[0xffffffd1][0x1e]d[0xfffffff0][0xc][0xffffffff][0x11][0xffffffa3][0xffffffb0]<[0xffffff9d][0xffffff9f][0xffffff88][0xffffffbf][0xfffffff4][0xffffffc8][0xffffffbb]-[0xffffffba]H[0xffffffc8][[0xffffffc9][0xffffff95]Qq][0xfffffff6]-[0xffffff94]S[0xffffff91][0xffffff91][0xffffff91][0xffffffef]j[0xffffffe2]yA3[0xffffff93][0xfffffff0][0x1d]-[0xb][0xffffffcb][0xffffffe0][\n]"
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]X[0xffffffd1]n[0xffffffda]0[0x14]}[0xffffffe7]+,[0xffffffba]J [0x11][0xffffffb2][0x1][0xffffffeb][0xffffffaa]Jy[0xffffffa0][0x19]e[0xffffffd5][0xffffffa8]`[0xffffffd0]v[0xffffff9b][0xffffffe4][0x17][0xffffff93]8`)[0xffffff89]Q[0xffffff9c]@[0xffffffb7][0xffffffa9][0xfffffffb][0xfffffff6]9NB[0xffffffe3]$[0xc]H[0xffffffe0][0xffffffad][0xffffff8e][0xffffff8f][0xffffffef]97[0xffffffdc]s}[0xffffffd3][0xb][0xffffffa0]S[0xffffffc7]A[0xffffffae][0xffffffc9][0xffffff80][0xffffff89]|4G[0xc][0xffffffd7].[0xffffffc0][0xffffffe3][0xffffff92]0`[0x11][0x1b][0x3][0xffffff83][0xffffffba]>".[0x3][0xfffffffe]2\[0xffffffc4]P[0xffffff9f][0xffffff82]9[0x6][0xfffffff8][0x5][0x1b][0xffffff81][0xffffff8f]M@\[0xffffffb1][0xffffffcd][0xffffff96][0xffffffd8][0xffffffb6][0xffffffc3][0x5][0xfffffff5]L[0xffffffec][0xffffff85] [0x13][0xfffffffb][0xffffffd8][0xfffffff0][0xffffffc5][0xffffffe6][0x1a]{[0xffffff8c]P[0xffffffbe]g[0x1][0xffffffcc][0xffffffff]^x[0x18][0xffffffbb]`[0xffffffee][0xffffffd1][\r][0xffffffe3][0x1b][0xffffff9c][0xffffffb2][0xffffffa1]/=[0xffffffea][0xffffffe0][0x16][0xffffffb8]#[0x1e][0xffffffb6][0xffffffe8]K[0xb][0xffffff8c]W[0xffffffd8]C-00[0x17][0xfffffffc][0xffffffa9][0xffffffd8]%[0xffffff81][0xffffffd3][0xc][0xffffffe3][0xffffff9b][0xffffffc4][0xffffffb2][0xffffffb0][0xffffff87]][0x1f][0xffffffd0][0x10][0xffffffe3][0x13]w[0x1][0xffffffd8]/[0xffffffe6]c[0xffffff87][0xffffff81][0xffffffc6]w[0xffffffe2][0xffffff9a]<j[0xb][0xffffff8c][0xffffff88][0x1b][0xfffffff0]0[0xf][0xffffffc8][0x0][0xffffffe3]Y[0xffffffb3][0xffffffc6]9"[0xffffff8a]Z[0xffffff9c]F[0xffffffdb][0x10][0xffffffcb][0xfffffff6]&:[0xffffffd0]~[0xffffffff]A3[0x1c][0xffffffb3][0xffffffcd][0xffffffb3][0x2][0xffffffaa][0xe]6[0xe]1[0xffffffc4]+[0x11][0xffffffaf]a[0xffffffb3][0xffffffe4]|[0xffffffc0]E[0xe][0xffffffd6][0xffffffea][0xffffff97][0xffffff93][0xffffffe9]x8[0xffffffed]?[0xffffffdc][0xffffffdd][0xffffff8f][0x6][0xffffffb3][0x1b][0xffffffa8]Ax[0x9][0xffffffe1][0xffffff90][0xffffffd2][0xffffff85][0xffffff8d]![0xffffff8c]( [0xffffffec][0xffffffaf]V61[0xffffffb8]4[0xffffffea]B[0x18][0x13][0xfffffff1][0xffffffc8]u[0xffffffb0][0xffffffc0]>x[0xffffff8e][0xffffffdf][0xffffff85][0xffffffba]Fv[0xffffffb0][O[0xffffffa7][0xffffff84][0xffffff9e][0xffffffc6][0xffffff8f][0xffffffeb][0xffffffab][0xffffffe6]9Eu[0xf][0x14]5[0x1a][0xffffffeb][0xfffffffd]Q[0x7f]2[0xfffffff9][0xffffffdc][0x7f][0xffffffec][0xffffff9f]SOO[0xffffff9b][0xe][0xffffff86][0xffffffe0][0xffffffdb][0xffffffd3]`[0xfffffffa][0x13]|[0xfffffff9][0xffffffaa]?[0xffffffc1][0x19][0xffffffb5][0xfffffffc][\r][0xfffffff2]p[0xffffffc2][0x16][0xffffff93][0xffffffdd][0xffffff8e]n12D[0xffffffbc][0xffffffa4][0x16]w[0xffffffc6][0xfffffffc][0xffffffa8][0xffffffad][0xffffffe8][0xffffff86]c[0xffffffc2]z[0x16][0xffffffa9]*[0xffffffb1]I@c[0xffffff88]}[0xffffffe5][0xffffff9e][0x17][0x1a][0xffffffa8][0xffffffbf][0xfffffffb][0xffffff83][0xffffffdd][0xfffffff5]M:[0xffffffcd][0xffffffd7][0xc]e:[0xffffffbd]Tv[0xffffffcd]v[0xffffff9c][0xffffffda][0xffffffbd]k[0xffffffd1][0xfffffff6][0xffffffc4][0xffffffa3]f`[0xfffffff8][0xffffffcf]{$][0x1d].)W[0xe][0xffffffe7][0xffffffd4][0xfffffff5][0xffffffa9][0xffffff9c][0xffffffae]SH[0xffffffca]j[0xffffffb2]C[0xffffffbf][0xffffff87].V[0x3][0xffffffe6][0xffffffa9]s[0xffffffe2][0xffffffaa][0xb][0xffffffc1][0xffffffa1]D[0xfffffffb]@Qv[0xfffffffc][0xffffffee][0xfffffff1][0xffffffc1][0xffffff8e][0xffffffb6][0xb][0xffffff9f]=[0xffffffe0] C[0xfffffff0][0xffffffa4]T35J([0xffffffee]1m[0xffffffb4]Z[0xffffffa9]:[0xffffffef][0xffffff9d][0xffffffbc]I1[0xffffff95][0xffffffb7][0xffffffa0][0xfffffff1]L[0x6][0xffffffa4][0xffffffa3][0xfffffff3][0xffffffce][0x14]7[0xffffffbd]-[0xffffff91][0x15][0xffffffad]O[0xffffffd3][0xffffff9b][0x1e][0xffffffe8]ob[0xffffffdb](![0xffffff81]0[0xffffff89][0xffffffbe][0xffffffcf]k9[0x15][0xffffff95];[0xffffffd2][0xffffffe9][0xffffffa4]tS[0xffffffbe][0xffffffaf][0xffffffcb][0xffffffc6][0xffffff8f]I[0xffffffb2]d[0xfffffff5][0xffffffd0][0xfffffffa]z[0xffffffe0][0xffffff85][0x17]G[0xffffffb6][0xffffffac]s[0xffffffe1]{[0xffffff95][0xfffffffc][0x16]1[0xffffffff][0xfffffffd] [0xffffffa5]w[0xffffff90][0xffffffbf]rB[0xffffff8e][0xffffffe8]E[0xffffffb2][0xffffffc1][0xffffff8e][0xffffffd7][0xffffff90][0x13][0xffffff91]wT[0xffffffbc][0x3][0xffffff94][0xfffffff5].pGKar[0xffffffa0]B[0xffffffe7][0xffffffc4][0xffffffbf]O[0xffffff91]g[0xffffffd2][0xffffffb1][0xffffffb8]M[0xffffffc2]Y`[0x1b][0x13][0xfffffff3]E5[0xffffff83][0xffffffc8][0xffffffa5]I[0xc][0xffffff8f]2^C[0x10][0xffffff86]4[0xffffff99][0xffffffdb][0xffffffc9]a[0xffffff82]n_[0xffffff99][0xffffffca][0xffffff9a][0xffffffca][0xffffffd8][0xffffffe5][0xffffff8c]r[0xffffffba];[0xffffffaf][0xffffffca]72[0xffffffc1][0xfffffff5][0xffffffbf][0xffffffbb]R[0xe]Y[0xffffffd2]&[0xffffffaf]Y[0xffffffc6]tr[0xffffffa9][0xffffffdc][0xe][0xffffffb2][0xffffff8c][0xffffffac][0xffffffa8][0xffffffa4]_[0x12][0xffffffe3]V[0xffffff97]U[0xffffff93][0xffffff85][0xffffffe5]=[0xffffffe4]$[0x1c]J[0x8]([0xffffffb8][0xffffff96][0xffffffd2][0xffffffe7]:[0xffffffda]N[0xffffffb8][0xffffff8c]/t[0xffffffd6]6[0x1d][0xffffffe1][0xffffff9c]"[0xffffff83][0xffffffc9][0x8] ]Jb[0x0][0xffffffdf][0xffffffb2][0xffffff88]Q[0xfffffffb]x[0xffffffbf][0x15][0xffffffcd][0xffffff81][0xfffffffc][0xffffff8d]-<[0xffffffe4]0[0x8][0x5][0x5][0xffffff84]Q[0xffffffec]}[0xffffffd5][0xffffff9c]QP[0xffffffc5]][0xffffffa7]QPe[0x16][0xffffff8e]ym[0x14][0xffffffb8][0x6][0xffffffc7][0x1e]K[0xffffffdd][0xffffffab][0xffffff90]|E[0xffffffea][0xffffffd2]7R[0xffffffc4]+[0xffffffd1][0x1e]d[0xfffffff0][0xc][0xffffffff][0x11][0xffffffa3][0xffffffb0]<[0xffffff9d][0xffffff9f][0xffffff88][0xffffffbf][0xfffffff4][0xffffffc8][0xffffffbb]-[0xffffffba]H[0xffffffc8][[0xffffffc9][0xffffff95]Qq][0xfffffff6]-[0xffffff94]S[0xffffff91][0xffffff91][0xffffff91][0xffffffef]j[0xffffffe2]yA3[0xffffff93][0xfffffff0][0x1d]-[0xb][0xffffffcb][0xffffffe0][\n]"
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-1 << "[0xffffffbb][0xffffff98][0x10]Z[0xffffffd4][0xffffffbc][0xffffffc6][0xffffffd9]`[0xffffffc9]7>[0x9][0x1c]yf[0xffffffe7][0xf]N[0xffffffd3][0xffffffba][0xffffff92][0xfffffff0][0x15]>^%-[0xffffff95]'[0xffffffea]S[0xb]:[0xffffffb4][0xffffffa7][0x15]5[0xffffff96]Sk)=]l[0xffffff85]T[0xfffffffe][0xffffffd4][0xffffff95][0xfffffff4]T[0xffffff9b]-[0xffffffce]$[0xffffffaa]t;[0xffffffac][0xffffffa4]'/([0xffffffdf][0x12][0xffffff92]-%[0xfffffffe]7[0xffffffdf][0xffffffae]/[0xfffffff0][0xffffffd4]in[0xffffff87][0xffffffe3][0xf]u[0xfffffff3][0xffffff94][0x7][0xffffff9c][0xffffffea]i[0x5][0xffffffe0]<[0xffffffba][0xffffffb0]#%[0xffffffaf][0xffffffae][0xffffffa8])[0xffffffe9][0x5]Q/[0xffffffc0][0xc]Y[0xffffffc8]#[0xffffffdb][0xfffffff0]L,[0xffffff8b][0xffffff83]G[0xffffffd0][0xffffffa2][0xffffffd0][0xffffffd1]N*[0xfffffff0]?l[0x1d]d@[0xffffffbe][0x15][0x0][0x0]"
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[0xffffffbb][0xffffff98][0x10]Z[0xffffffd4][0xffffffbc][0xffffffc6][0xffffffd9]`[0xffffffc9]7>[0x9][0x1c]yf[0xffffffe7][0xf]N[0xffffffd3][0xffffffba][0xffffff92][0xfffffff0][0x15]>^%-[0xffffff95]'[0xffffffea]S[0xb]:[0xffffffb4][0xffffffa7][0x15]5[0xffffff96]Sk)=]l[0xffffff85]T[0xfffffffe][0xffffffd4][0xffffff95][0xfffffff4]T[0xffffff9b]-[0xffffffce]$[0xffffffaa]t;[0xffffffac][0xffffffa4]'/([0xffffffdf][0x12][0xffffff92]-%[0xfffffffe]7[0xffffffdf][0xffffffae]/[0xfffffff0][0xffffffd4]in[0xffffff87][0xffffffe3][0xf]u[0xfffffff3][0xffffff94][0x7][0xffffff9c][0xffffffea]i[0x5][0xffffffe0]<[0xffffffba][0xffffffb0]#%[0xffffffaf][0xffffffae][0xffffffa8])[0xffffffe9][0x5]Q/[0xffffffc0][0xc]Y[0xffffffc8]#[0xffffffdb][0xfffffff0]L,[0xffffff8b][0xffffff83]G[0xffffffd0][0xffffffa2][0xffffffd0][0xffffffd1]N*[0xfffffff0]?l[0x1d]d@[0xffffffbe][0x15][0x0][0x0]"
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000002 releasing valid endpoint
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 releasing valid endpoint
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 releasing endpoint
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 releasing endpoint
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 connection http-outgoing-1 can be kept alive for 3 MINUTES
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+23:16:53.123 [TestNG-PoolService-1] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000002 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+23:16:53.123 [TestNG-PoolService-2] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+]]></system-out>
+    <system-err><![CDATA[Mar 27, 2025 11:16:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 134
+Mar 27, 2025 11:16:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 134.0.6998.166. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testElPais[firefox, false](7)" classname="org.bsassignment.UnifiedBrowserStackTest" time="2.935">
+    <failure message="&apos;java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)&apos;" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)'
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:335)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:234)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:1334)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:1354)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1155)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.bsassignment.UnifiedBrowserStackTest.createWebDriver(UnifiedBrowserStackTest.java:53)
+	at org.bsassignment.UnifiedBrowserStackTest.testElPais(UnifiedBrowserStackTest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+  </testcase>
+  <testcase name="testElPais[chrome, false](8)" classname="org.bsassignment.UnifiedBrowserStackTest" time="37.756">
+    <system-out><![CDATA[Page Title: EL PAÍS: el periódico global
+Title is in Spanish: EL PAÍS: el periódico global
+Original Title (Article 1): Estados Unidos empieza a tratar a Europa como siempre ha tratado al resto del planeta
+Translated Title (Article 1): The United States is beginning to treat Europe as it has always treated the rest of the planet.
+No image found for Article 1
+Original Title (Article 2): No somos cómplices de Bretón
+Translated Title (Article 2): We are not accomplices of Breton
+No image found for Article 2
+Original Title (Article 3): Mi kit de emergencia
+Translated Title (Article 3): My emergency kit
+No image found for Article 3
+Original Title (Article 4): Notas sobre la polémica en torno a ‘El odio’
+Translated Title (Article 4): Notes on the controversy surrounding &#39;Hate&#39;
+No image found for Article 4
+Original Title (Article 5): En Hollywood, las mujeres estamos cansadas de que nos enfrentéis entre nosotras
+Translated Title (Article 5): In Hollywood, we women are tired of being pitted against each other.
+Existing file deleted: /Users/deekshithaj/Article_images/Article_5.jpg
+Image saved at: /Users/deekshithaj/Article_images/Article_5.jpg
+Downloaded: Article_5.jpg
+Repeated Words (Appeared more than twice):
+of: 3 occurrences
+the: 4 occurrences
+]]></system-out>
+  </testcase>
+</testsuite>
